@@ -17,31 +17,35 @@ import classes from './CardView.css'
   // }
    
 
-if(this.state.showRentals){
+// if(this.state.showRentals){
   
   return(
     <div className={classes.CardView} >
       <p className = {classes.bold} >Title: {props.title} </p>
       <p>Description: {props.description} </p>
-      <p>Number of car rentals: {props.rentals} </p>
+
+      {props.showHistory?
+      <p>Number of car rentals:{props.rentals}</p> 
+      :null}
+
       <p>Image: {props.image} </p>
       <img className={classes.Size} src = {props.imageSource}/>
       
     </div>
   )}
 
-else{
-  return(
-    <div className={classes.CardView} >
-      <p className = {classes.bold} >Title: {props.title} </p>
-      <p>Description: {props.description} </p>
-      <p>Image: {props.image} </p>
-      <img className={classes.Size} src = {props.imageSource}/>
-    </div>
-  )}
+// else{
+//   return(
+//     <div className={classes.CardView} >
+//       <p className = {classes.bold} >Title: {props.title} </p>
+//       <p>Description: {props.description} </p>
+//       <p>Image: {props.image} </p>
+//       <img className={classes.Size} src = {props.imageSource}/>
+//     </div>
+//   )}
 
 
-  }
+//   }
 
   
 

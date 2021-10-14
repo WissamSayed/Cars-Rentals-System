@@ -3,11 +3,12 @@ import classes from './App.css';
 import CardView from './CardView/CardView';
 
 
-
+// import db from './db.json'
 
 
 
 class App extends Component {
+  
   state = {
     cars: [
       { title: 'Mercedes', description: 'C-Class', rentals: 5, imageSource:''},
@@ -32,7 +33,7 @@ class App extends Component {
 
 
 render(){
-
+  // console.log(db.cars);
   let cars = null;
   let BtnClass = [classes.Button];
   
@@ -42,12 +43,13 @@ render(){
       <div>
         {this.state.cars.map((car,i) => { 
 
-          return <CardView  
+          return <CardView 
+          showHistory = {this.state.showCarRental} 
           key={`some-person-${i}`}
           title={car.title} 
           rentals= {car.rentals}   
           imageSource={car.imageSource} 
-          click = {this.toggleHandler}
+          
            />
 
         })
