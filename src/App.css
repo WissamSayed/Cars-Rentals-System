@@ -26,34 +26,7 @@ font-weight:lighter;
 }
 
 
-/* .Card{
-  width: 100%;
-  height:200px;
-  background: #333;
-  color: #fff;
-  font-size: 30px;
-  margin: 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-} */
 
-/* .Table{
-  
-    width: 100%;
-    border: 1px solid black;
-  }
-
-.Flex{
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* height: 100px;
-  width: 100%;
-  background-color: #00008B;
-  color: #fff;
-  font-size:medium;
-} */
 
 
 
@@ -90,6 +63,11 @@ font-weight:lighter;
 .bold{
   font-weight:bold; 
 
+}
+
+.Size{
+  width:"5 px";
+  height:"5 px";
 }
 
 
